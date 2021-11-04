@@ -29,23 +29,23 @@ $ brew install rbenv ruby-build
 $ rbenv init
 ```
 
-### Installing ruby-2.7
+### Installing ruby-3.0
 
-With both installed, we can now install the actual ruby version 2.7. You can check available ruby versions with `rbenv install --list`.
-At the time of this writing, the latest stable version is `2.7.5`, which we also require.
+With both installed, we can now install the actual ruby version 3.0. You can check available ruby versions with `rbenv install --list`.
+At the time of this writing, the latest stable version is `3.0.3`, which we also require.
 
 We suggest you install the version we require in the [Gemfile](https://github.com/opf/openproject/blob/dev/Gemfile). Search for the `ruby '~> X.Y.Z'` line
 and install that version.
 
 ```bash
 # Install the required version as read from the Gemfile
-rbenv install 2.7.5
+rbenv install 3.0.3
 ```
 
 This might take a while depending on whether ruby is built from source. After it is complete, you need to tell rbenv to globally activate this version
 
 ```bash
-rbenv global 2.7.5
+rbenv global 3.0.3
 ```
 
 You also need to install [bundler](https://github.com/bundler/bundler/), the ruby gem bundler.
@@ -116,7 +116,7 @@ You should now have an active ruby and node installation. Verify that it works w
 
 ```bash
 $ ruby --version
-ruby 2.7.5p203 (2021-07-07 revision a21a3b7d23) [x86_64-linux]
+ruby 3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [x86_64-darwin20]
 
 $ bundler --version
 Bundler version 2.1.4
